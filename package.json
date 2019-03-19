@@ -1,0 +1,22 @@
+{
+  "name": "@kcp/lint",
+  "version": "0.0.1",
+  "homepage": "https://github.com/KlasaCommunityPlugins/lint-files",
+  "bugs": {
+    "url": "https://github.com/KlasaCommunityPlugins/lint-files/issues"
+  },
+  "license": "MIT",
+  "author": "KlasaCommunityPlugins",
+  "main": "ts.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KlasaCommunityPlugins/lint-files.git"
+  },
+  "engines": {
+    "node": ">=10.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "tslint": "^5.14.0"
+  }
+}
