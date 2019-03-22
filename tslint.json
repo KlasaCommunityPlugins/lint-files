@@ -1,6 +1,7 @@
 {
 	"rules": {
 		"adjacent-overload-signatures": true,
+		"indent": [true, "tabs", 2],
 		"member-access": [true, "no-public"],
 		"member-ordering": [true, {
 			"order": [
