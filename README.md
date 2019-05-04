@@ -6,10 +6,18 @@ Central shareable lint files. This is inteded for private use, but you can use i
 npm i --save-dev KlasaCommunityPlugins/lint-files
 ```
 
+## eslint rules
+
+```json
+{
+    "extends": "@kcp"
+}
+```
+
 ## tslint rules
 
 ```json
 {
-    "extends": "@kcp/lint"
+    "extends": "@kcp/eslint-config-lint"
 }
 ```
