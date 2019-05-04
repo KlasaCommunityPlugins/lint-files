@@ -1,5 +1,5 @@
 {
-  "name": "@kcp/lint",
+  "name": "@kcp/eslint-config-lint",
   "version": "0.0.1",
   "homepage": "https://github.com/KlasaCommunityPlugins/lint-files",
   "bugs": {
@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "author": "KlasaCommunityPlugins",
-  "main": "ts.js",
+  "main": "eslint-ts.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/KlasaCommunityPlugins/lint-files.git"
