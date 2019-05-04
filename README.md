@@ -10,7 +10,7 @@ npm i --save-dev KlasaCommunityPlugins/lint-files
 
 ```json
 {
-    "extends": "@kcp"
+    "extends": "@kcp/lint"
 }
 ```
 
