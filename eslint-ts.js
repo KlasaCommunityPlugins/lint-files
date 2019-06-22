@@ -60,7 +60,6 @@ module.exports = {
 		"no-case-declarations": "warn",
 		"no-div-regex": "error",
 		"no-else-return": ["error", { "allowElseIf": false }],
-		"no-empty-function": "warn",
 		"no-empty-pattern": "warn",
 		"no-eq-null": "warn",
 		"no-eval": "warn",
@@ -206,6 +205,7 @@ module.exports = {
 		"@typescript-eslint/adjacent-overload-signatures": "error",
 		"@typescript-eslint/array-type": ["error", "array-simple"],
 		"@typescript-eslint/await-thenable": "error",
+		"@typescript-eslint/ban-ts-ignore": "warn",
 		"@typescript-eslint/ban-types": [
 			"error",
 			{
@@ -234,15 +234,19 @@ module.exports = {
 		"@typescript-eslint/camelcase": ["error", { "ignoreDestructuring": true }],
 
 		"@typescript-eslint/class-name-casing": "error",
+		"@typescript-eslint/consistent-type-definitions": ["warn", "interface"],
 		"@typescript-eslint/explicit-member-accessibility": ["error", { "accessibility": "no-public" }],
 
 		"func-call-spacing": "off",
-		"@typescript-eslint/func-call-spacing": "error",
+		"@typescript-eslint/func-call-spacing": ["error", "never"],
 
 		"indent": "off",
 		"@typescript-eslint/indent": ["error", "tab", { "SwitchCase": 1 }],
+		
+		"@typescript-eslint/interface-name-prefix": ["error", "never"],
 
 		"@typescript-eslint/member-delimiter-style": "error",
+		"@typescript-eslint/member-naming": ["error", { "private": "^_" }],
 		"@typescript-eslint/member-ordering": [
 			"error",
 			{
@@ -270,21 +274,39 @@ module.exports = {
 
 		"no-array-constructor": "off",
 		"@typescript-eslint/no-array-constructor": "error",
+		
+		"no-empty-function": "off",
+		"@typescript-eslint/no-empty-function": "warn",
 
 		"@typescript-eslint/no-empty-interface": "error",
 
 		"no-extra-parens": "off",
 		"@typescript-eslint/no-extra-parens": ["warn", "all", { "nestedBinaryExpressions": false }],
+		
+		"@typescript-eslint/no-floating-promises": "warn",
 
 		"@typescript-eslint/no-for-in-array": "error",
+		"@typescript/eslint/no-inferrable-types": "error",
 		"@typescript-eslint/no-misused-new": "error",
+		"@typescript-eslint/no-object-literal-type-assertion": "error",
 		"@typescript-eslint/no-require-imports": "error",
 		"@typescript-eslint/no-this-alias": ["error", { "allowDestructuring": true }],
 		"@typescript-eslint/no-triple-slash-reference": "error",
+		"@typescript-eslint/no-unnecessary-qualifier": "error",
 		"@typescript-eslint/no-unnecessary-type-assertion": "error",
 
 		"no-unused-vars": "off",
-		"@typescript-eslint/no-unused-vars": "error",
+		"@typescript-eslint/no-unused-vars": [
+			"error", 
+			{
+				"vars": "all",
+				"args": "all",
+				"ignoreRestSiblings": true,
+				"argsIgnorePattern": "^_",
+				"caughtErrors": "all",
+				"caughtErrorsIgnorePattern": "^_"
+			}
+		],
 
 		"no-use-before-define": "off",
 		"@typescript-eslint/no-use-before-define": "error",
@@ -296,6 +318,7 @@ module.exports = {
 		"@typescript-eslint/prefer-for-of": "error",
 		"@typescript-eslint/prefer-includes": "error",
 		"@typescript-eslint/prefer-namespace-keyword": "error",
+		"@typescript-eslint/prefer-regexp-exec": "warn",
 		"@typescript-eslint/prefer-string-starts-ends-with": "error",
 		"@typescript-eslint/require-array-sort-compare": "error",
 		"@typescript-eslint/restrict-plus-operands": "error",
@@ -304,6 +327,12 @@ module.exports = {
 		"@typescript-eslint/semi": "error",
 
 		"@typescript-eslint/type-annotation-spacing": ["error", { "after": true, "before": false }],
+		"@typescript-eslint/unbound-method": [
+			"error",
+			{
+				"ignoreStatic": true
+			}
+		],
 		"@typescript-eslint/unified-signatures": "error"
 	}
 }
