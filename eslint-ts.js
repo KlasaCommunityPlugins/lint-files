@@ -200,7 +200,8 @@ module.exports = {
 		"sort-imports": [
 			"error",
 			{
-				"memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+				"memberSyntaxSortOrder": ["none", "all", "single", "multiple"],
+				"ignoreMemberSort": true
 			}
 		],
 		"symbol-description": "error",
