@@ -197,7 +197,12 @@ module.exports = {
 		"prefer-template": "error",
 		"require-yield": "error",
 		"rest-spread-spacing": "error",
-		"sort-imports": "error",
+		"sort-imports": [
+			"error",
+			{
+				"memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+			}
+		],
 		"symbol-description": "error",
 		"template-curly-spacing": "error",
 		"yield-star-spacing": "error",
