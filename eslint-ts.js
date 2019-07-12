@@ -326,7 +326,7 @@ module.exports = {
 		"semi": "off",
 		"@typescript-eslint/semi": "error",
 
-		"@typescript-eslint/type-annotation-spacing": ["error", { "after": true, "before": false }],
+		"@typescript-eslint/type-annotation-spacing": ["error", { "after": true, "before": false, overrides: { arrow: { before: true, after: true } } }],
 		"@typescript-eslint/unbound-method": [
 			"error",
 			{
