@@ -288,7 +288,6 @@ module.exports = {
 		"@typescript-eslint/no-for-in-array": "error",
 		"@typescript-eslint/no-inferrable-types": "error",
 		"@typescript-eslint/no-misused-new": "error",
-		"@typescript-eslint/no-object-literal-type-assertion": "error",
 		"@typescript-eslint/no-require-imports": "error",
 		"@typescript-eslint/no-this-alias": ["error", { "allowDestructuring": true }],
 		"@typescript-eslint/no-triple-slash-reference": "error",
