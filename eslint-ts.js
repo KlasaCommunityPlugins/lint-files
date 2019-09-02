@@ -270,7 +270,6 @@ module.exports = {
 				]
 			}
 		],
-		"@typescript-eslint/no-angle-bracket-type-assertion": "error",
 
 		"no-array-constructor": "off",
 		"@typescript-eslint/no-array-constructor": "error",
