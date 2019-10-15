@@ -289,7 +289,6 @@ module.exports = {
 		"@typescript-eslint/no-misused-new": "error",
 		"@typescript-eslint/no-require-imports": "error",
 		"@typescript-eslint/no-this-alias": ["error", { "allowDestructuring": true }],
-		"@typescript-eslint/no-triple-slash-reference": "error",
 		"@typescript-eslint/no-unnecessary-qualifier": "error",
 		"@typescript-eslint/no-unnecessary-type-assertion": "error",
 
